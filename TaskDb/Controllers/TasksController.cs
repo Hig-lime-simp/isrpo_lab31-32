@@ -223,7 +223,6 @@ public class TasksController : ControllerBase
         return Ok(overdue);
     }
     
-    // PATCH /api/tasks/complete-all (Самостоятельное задание 1)
     [HttpPatch("complete-all")]
     public async Task<ActionResult> CompleteAll()
     {
@@ -239,7 +238,6 @@ public class TasksController : ControllerBase
         return Ok(new { Updated = tasks.Count });
     }
     
-    // DELETE /api/tasks/completed (Самостоятельное задание 2)
     [HttpDelete("completed")]
     public async Task<ActionResult> DeleteCompleted()
     {
